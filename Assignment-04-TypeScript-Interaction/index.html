@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript User Interaction</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f7;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 70px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px #00000015;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ccd3df;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 24px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        #display {
+            margin-top: 25px;
+            font-size: 20px;
+            color: #166534;
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>TypeScript User Interaction</h1>
+
+        <p>Enter your name below.</p>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+        >
+
+        <br>
+
+        <button id="greetBtn">Greet Me</button>
+
+        <div id="display" aria-live="polite"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
