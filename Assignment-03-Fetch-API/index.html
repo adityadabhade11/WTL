@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API - Users List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a5f;
+        }
+
+        #user-container {
+            max-width: 700px;
+            margin: 25px auto;
+        }
+
+        .user-card {
+            background: white;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #00000012;
+        }
+
+        .user-card h3 {
+            color: #2563eb;
+            margin-top: 0;
+        }
+
+        .user-card p {
+            overflow-wrap: anywhere;
+        }
+
+        #status {
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Users List</h1>
+
+    <p id="status">Loading users...</p>
+
+    <div id="user-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
